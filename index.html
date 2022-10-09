@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/dress.svg" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Monvalise</title>
+  <link rel="preload" href="fonts/Stolzl-Book.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Stolzl-Medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/Stolzl-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+
+<body class="page__body">
+  <div class="site-container">
+    <main class="main">
+      <div class="container-fluid text-center">
+        <div class="row">
+          <div class="brand-top">
+            <img src="img/like.svg" alt="like">
+            <img src="img/dress.svg" alt="dress">
+            Брендовий верхній одяг від 899 грн
+          </div>
+        </div>
+      </div>
+      <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a href="#" class="header__logo"><img src="img/logo-header.svg" alt=""></a>
+      <div class="header__wrap">
+        <form action="#">
+          <input type="search" placeholder="Знайти речі або бренди">
+          <button class="btn-search"></button>
+        </form>
+        <button class="header__btn">Додати товар</button>
+      </div>
+      <div class="header__lang">
+        <select name="lang" id="lang">
+          <option value="ua" selected>Укр</option>
+          <option value="en">Англ</option>
+          <option value="it">Італ</option>
+        </select>
+      </div>
+      <div class="header__info">
+        <a href="#" class="header__favorite">
+          <img src="img/heart.svg" alt="Favorite">
+          <span>8</span>
+        </a>
+        <a href="#" class="header__message">
+          <img src="img/message.svg" alt="Message">
+          <span>3</span>
+        </a>
+        <a href="#" class="header__cart">
+          <img src="img/cart.svg" alt="Cart">
+          <span>3</span>
+        </a>
+      </div>
+      <div class="header__login">
+        <img src="img/header-avatar.jpg" alt="Avatar">
+      </div>
+    </div>
+    <div class="header__nav">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item text-center">
+                <a class="nav-link active" aria-current="page" href="#">Головна</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Каталог</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Жінкам</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Чоловікам</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Дитячі речі</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Аукціон</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Бренди</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Акції</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Аутентифікація</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link" href="#">Блог</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+      <div class="catalog">
+        <div class="container-fluid" style="border-top: 1px solid #E0E3E3">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Головна</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Каталог одягу</li>
+                  </ol>
+                </nav>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <h1 class="catalog__title">Каталог одягу</h1>
+              </div>
+            </div>
+            <div class="catalog__content">
+              <div class="row">
+                <div class="col-lg-3 col-md-4 col-sm-12">
+                  <div class="catalog__filter filter">
+                    <div class="filter__title">Фільтри</div>
+                    <div class="filter__accordion">
+                      <div class="accordion" id="accordionPanelsStayOpenExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                              Категорії
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
+                            <div class="accordion-body">
+                              <form action="#" id="category">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                              Ціна
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                            <div class="accordion-body">
+                              <div class="filter-price__slider" id="range-slider"></div>
+                              <div class="filter-price__inputs">
+                                <label class="filter-price__label">
+                                  <span class="filter-price__text">Від</span>
+                                  <input type="number" min="980" max="50000" placeholder="980" class="filter-price__input" id="input-0">
+                                </label>
+                                <label class="filter-price__label">
+                                  <span class="filter-price__text">До</span>
+                                  <input type="number" min="980" max="50000" placeholder="50000" class="filter-price__input" id="input-1">
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                              Продавець
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                            <div class="accordion-body">
+                              <form action="#" id="seller">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <span class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </span>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                              Бренд
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                            <div class="accordion-body">
+                              <form action="#" id="brand">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                              Стать
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingFive">
+                            <div class="accordion-body">
+                              <form action="#" id="sex">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Жінкам</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Чоловікам</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Унісекс</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                              Розмір
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                            <div class="accordion-body">
+                              <form action="#" id="size">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                              Колір
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                            <div class="accordion-body">
+                              <form action="#" id="color">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                              Матеріал
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                            <div class="accordion-body">
+                              <form action="#" id="material">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+                              Сезон
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+                            <div class="accordion-body">
+                              <form action="#" id="season">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+                              Стиль
+                            </button>
+                          </h2>
+                          <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+                            <div class="accordion-body">
+                              <form action="#" id="style">
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 1</span>
+                                    </span>
+                                    <span class="amount">(64)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 2</span>
+                                    </span>
+                                    <span class="amount">(16)</span>
+                                  </label>
+                                </div>
+                                <div class="form__item">
+                                  <label class="label">
+                                    <span>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="fake"></span>
+                                      <span class="text">Value - 3</span>
+                                    </span>
+                                    <span class="amount">(24)</span>
+                                  </label>
+                                </div>
+                              </form>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-md-8 col-sm-12">
+                  <div class="catalog__content content">
+                    <div class="content__sort">Сортувати за:
+                      <div class="content__select">
+                        <select name="sort" id="sort">
+                          <option value="value-1" selected>За замовчуванням</option>
+                          <option value="value-2">Від дешевих</option>
+                          <option value="value-3">Від дорогих</option>
+                          <option value="value-4">По рейтингу</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="content__items">
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-1.jpg" alt="">
+                          </div>
+                          <div class="content__up">ТОП</div>
+                          <div class="content__brand">LOUIS VUITTON</div>
+                          <a href="#" class="content__name">Темно-сині джинси Louis Vuitton</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">5 499 ₴</div>
+                            <div class="content__price">3 799 ₴ </div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Херсон</div>
+                            <div class="content__author">
+                              <img src="img/avatar-1.png" alt="avatar">
+                              <div class="content__avatar-name">LoveBrand</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-2.jpg" alt="">
+                          </div>
+                          <div class="content__up">ТОП</div>
+                          <div class="content__brand">THOM BROWNE</div>
+                          <a href="#" class="content__name">Чорний піджак Thom Browne</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">11 999 ₴</div>
+                            <div class="content__price">8 599 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Хмельницький</div>
+                            <div class="content__author">
+                              <img src="img/avatar-2.png" alt="avatar">
+                              <div class="content__avatar-name">Sell_For_Men</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-3.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">CANALI</div>
+                          <a href="#" class="content__name">Вовняний піджак Canali</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">4 999 ₴</div>
+                            <div class="content__price">2 599 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Хмельницький</div>
+                            <div class="content__author">
+                              <img src="img/avatar-2.png" alt="avatar">
+                              <div class="content__avatar-name">Sell_For_Men</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-4.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">LOUIS VUITTON</div>
+                          <a href="#" class="content__name">Клатч Louis Vuitton Limelight</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">4 999 ₴</div>
+                            <div class="content__price">4 999 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Дніпро</div>
+                            <div class="content__author">
+                              <img src="img/avatar-3.png" alt="avatar">
+                              <div class="content__avatar-name">Brandear</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-5.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">ELENA GHISELINI</div>
+                          <a href="#" class="content__name">Сумка з декором Elena Ghisellini</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">1 999 ₴</div>
+                            <div class="content__price">1 599 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Дніпро</div>
+                            <div class="content__author">
+                              <img src="img/avatar-3.png" alt="avatar">
+                              <div class="content__avatar-name">Brandear</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-6.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">ACNE</div>
+                          <a href="#" class="content__name">Бомбер Acne на блискавці</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">5 999 ₴</div>
+                            <div class="content__price">4 199 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Київ</div>
+                            <div class="content__author">
+                              <img src="img/avatar-4.png" alt="avatar">
+                              <div class="content__avatar-name">Alexalex</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-7.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">GUCCI</div>
+                          <a href="#" class="content__name">Довга сукня Gucci</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">11 999 ₴</div>
+                            <div class="content__price">8 599 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Рівне</div>
+                            <div class="content__author">
+                              <img src="img/avatar-5.png" alt="avatar">
+                              <div class="content__avatar-name">SellBuy</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-8.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">CHANEL</div>
+                          <a href="#" class="content__name">Помаранчевий бомбер Woolrich</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">1 999 ₴</div>
+                            <div class="content__price">1 599 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Кропивницький</div>
+                            <div class="content__author">
+                              <img src="img/avatar-6.png" alt="avatar">
+                              <div class="content__avatar-name">Deeva_Sofia</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="content__item">
+                        <div class="content__item_wrap">
+                          <div class="content__top">
+                            <div class="content__organic content__organic_hide">organic</div>
+                            <img src="img/catalog-heart.svg" alt="Favorite">
+                          </div>
+                          <div class="content__img">
+                            <img src="img/catalog-img-9.jpg" alt="">
+                          </div>
+                          <div class="content__up content__up_hide ">ТОП</div>
+                          <div class="content__brand">HACHE</div>
+                          <a href="#" class="content__name">Салатове пальто Hache</a>
+                        </div>
+                        <div class="content__fotter">
+                          <div class="content__prices">
+                            <div class="content__old-price">5 999 ₴</div>
+                            <div class="content__price">5 999 ₴</div>
+                          </div>
+                          <div class="content__info">
+                            <div class="content__location">Київ</div>
+                            <div class="content__author">
+                              <img src="img/avatar-1.png" alt="avatar">
+                              <div class="content__avatar-name">LoveBrand</div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                    <section class="paginations">
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-12 text-center">
+                            <nav aria-label="Page navigation example" class="d-inline-block">
+                              <ul class="pagination">
+                                <li class="page-item"><a class="page-link" href="#">Попередня</a></li>
+                                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                <li class="page-item"><a class="page-link" href="#">7</a></li>
+                                <li class="page-item"><a class="page-link" href="#">8</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Наступна</a></li>
+                              </ul>
+                            </nav>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </main>
+
+    <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-sm-6">
+        <ul class="list-reset">
+          <li><a href="#">Довідка для покупців</a></li>
+          <li><a href="#">Отримати підтримку</a></li>
+          <li><a href="#">Як купувати</a></li>
+          <li><a href="#">Як залишити корисний відгук</a></li>
+          <li><a href="#">Програма Захисту Покупців</a></li>
+          <li><a href="#">Рекомендації з безпечних покупок</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <ul class="list-reset">
+          <li><a href="#">Довідка для продавців</a></li>
+          <li><a href="#">Як почати продавати</a></li>
+          <li><a href="#">Тарифи</a></li>
+          <li><a href="#">Угода користувача</a></li>
+          <li><a href="#">Політика конфіденційності</a></li>
+          <li><a href="#">Правила користування порталом</a></li>
+          <li><a href="#">Бонусна програма</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <ul class="list-reset">
+          <li><a href="#">Про нас</a></li>
+          <li><a href="#">Довідка та FAQ</a></li>
+          <li><a href="#">Захист легальності контенту</a></li>
+          <li><a href="#">Адміністрація</a></li>
+          <li><a href="#">Вакансії</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-3 col-sm-6">
+        <ul class="list-reset">
+          <li><a href="#">Мобільний додаток</a></li>
+          <li><a href="#"><img src="img/google-play.png" alt="Goole Play"></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="copyright col-12">
+        <p>© <span class="year">2022</span> <a href="#">Monvalise</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  let today = new Date();
+  let year = today.getFullYear();
+  document.querySelector('.year').innerHTML = year;
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/15.6.1/nouislider.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script defer src="js/main.js"></script>
+
+    
+  </div>
+</body>
+
+</html>
