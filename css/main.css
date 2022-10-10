@@ -1077,6 +1077,18 @@ a {
     margin-top: 30px;
   }
 }
+
+@media (max-width: 900px) {
+  .catalog .content .paginations .pagination {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 480px) {
   .catalog .content .paginations .pagination {
     -ms-flex-wrap: wrap;
